@@ -63,5 +63,6 @@ return [
         App\Commands\AddkeyCommand::class,
         App\Commands\RemovekeyCommand::class,
         App\Commands\AliasCommand::class,
+        App\Commands\InformatorCommand::class,
     ],
 ];

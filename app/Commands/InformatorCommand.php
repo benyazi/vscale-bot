@@ -17,7 +17,7 @@ class InformatorCommand extends BaseCommand
     /**
      * @var string Command Description
      */
-    protected $description = "Informator Command to configurate auto information";
+    protected $description = "Informator Command to configurate auto notification";
 
     /**
      * @inheritdoc
@@ -29,9 +29,11 @@ class InformatorCommand extends BaseCommand
 		switch ($action) {
 			case 'enabled':
 				$this->enabledAutoInformation();
+				$this->replyWithMessage(['text' => 'Enabled low balance notification', 'parse_mode' => 'Markdown']);
 				break;
 			case 'disabled':
 				$this->disabledAutoInformation();
+				$this->replyWithMessage(['text' => 'Disabled low balance notification', 'parse_mode' => 'Markdown']);
 				break;
 			default:
 				break;
