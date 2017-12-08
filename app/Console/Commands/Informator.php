@@ -17,14 +17,14 @@ class Informator extends Command
      *
      * @var string
      */
-    protected $signature = 'informator:check';
+    protected $signature = 'vscale:notify';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Check users balance';
+    protected $description = 'Check users balance and sent notification';
 
     /**
      * Create a new command instance.
