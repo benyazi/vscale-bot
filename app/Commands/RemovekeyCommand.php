@@ -31,7 +31,7 @@ class RemovekeyCommand extends BaseCommand
         $message = 'You remove key '.$apiKey;
         $key = $this->user->keys()->where('api_key', $apiKey)->get()->first();
         if($key) {
-            $key->remove();
+            $key->delete();
         } else {
             $message = 'Key <'.$apiKey.'> not found.';
         }
